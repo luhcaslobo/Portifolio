@@ -1,0 +1,247 @@
+h1,h2{
+    margin: 0;
+}
+
+html{
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url('images/pexels-aleksandar-pasaric-1694000.jpg');
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cabecalho h1{
+    font-family: 'VT323',monospace;
+    font-size: 3rem;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+
+#msgDeApresentacao{
+    margin-left: 15%;
+    display: flex;
+    align-self: center;
+    animation: msgApresentacao 7s ease-in infinite;
+}
+@keyframes msgApresentacao{
+    0%{
+        transform:scale(1.0);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(1.0);
+    }
+}
+
+
+.cabecalho .fotoApresentacao #fotoDePerfil img{
+    border-style:solid;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 50%;
+    max-width: 200px;
+    filter: drop-shadow(0px 0px 7px #ffffff);
+    transform: scale(1);
+    transition: 1s;
+    animation: shadowAnimation 2s ease-in infinite;
+}
+@keyframes shadowAnimation {
+    0%{
+        filter: drop-shadow(0px 0px 7px #ffffff);
+    }
+    50%{
+        filter: drop-shadow(0px 0px 10px #ffffff);
+    }
+    100%{
+        filter: drop-shadow(0px 0px 7px #ffffff);
+    }
+}
+.cabecalho .fotoApresentacao #fotoDePerfil img:hover {
+    transform: scale(1.1)
+}
+
+.cabecalho .fotoApresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cabecalho #contato ul{
+    margin: 0;
+    margin-top: 12%;
+    padding: 0;
+    display:flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+.cabecalho #contato ul li a:link,.cabecalho #contato ul li a:visited, .cabecalho #contato ul li a:active{
+    color: white;
+}
+.cabecalho #contato ul li{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.cabecalho #contato ul li:hover{
+    
+    transform: scale(1.1);
+}
+
+.cabecalho .menu{
+    justify-content: start;
+    font-family: 'VT323',monospace;
+    font-size: 2rem;
+    font-weight: 100;
+    justify-content: space-between;
+    color: #E6E05A;
+    border-width: 1px;
+    border-color: #000;
+    border-style: solid;
+    margin: 1% 0% 1% 0%;
+}
+.cabecalho .menu ul{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 2% 2% 2%;
+    list-style-type: none;
+    text-shadow: 0 0 10px rgb(255, 254, 254);
+    padding: 0% 10% 0% 10%;
+}
+.cabecalho .menu ul li{
+    border-style: solid;
+    border-color: #F2CB66;
+    border-width: 2px;
+    padding: 1%;
+    transition: 0.5s;
+}
+.cabecalho .menu:hover ul li{
+    font-size: 1.1em;
+}
+
+
+.cabecalho .menu ul li:hover{
+    border-style: solid;
+    border-color: #F2CB66;
+    border-width: 2px;
+    padding: 1%;
+    animation: hoverMenu 1s linear infinite;
+    
+}
+
+@keyframes hoverMenu {
+    0%{
+        transform:rotate(0deg) ;
+    }
+    25%{
+        transform: rotate(-3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.cabecalho .menu ul li a:link, .cabecalho .menu ul li a:visited, .cabecalho .menu ul li a:active{
+    color: #E6E05A;
+}
+
+
+.trabalhos {
+    background-color:rgba(0,0,0,0.5);
+    padding: 3px;
+    border-radius: 25px;
+    margin: 0% 4% 1% 4%;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    transition-duration: 0.5s;
+    transform: scale(0.95);
+
+}
+.trabalhos:hover{
+    transform: scale(1);
+}
+
+
+.trabalhos h1{
+    display: flex;
+    justify-content: center;
+    font-family:'vt323',monospace;
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 0 4px #000;
+    
+}
+.trabalhos h2{
+    display: flex;
+    justify-content: center;
+    font-family:'vt323',monospace;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 0 4px #000;
+    
+}
+.trabalhos ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.trabalhos li{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 10px;
+    text-shadow: 0 0 4px #000;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.trabalhos p{
+    display: flex;
+    justify-content:center;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 10px;
+    text-shadow: 0 0 4px #000;
+    list-style: none;
+}
+
+#nomeEmpresa {
+    opacity: 0;
+    transform: rotate(0.1deg);
+    transform-origin: 0% 10000px;
+}
+
+
+
+
