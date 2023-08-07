@@ -171,7 +171,7 @@ body{
 
 
 .trabalhos {
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(41, 39, 39, 0.5);
     padding: 3px;
     border-radius: 25px;
     margin: 0% 4% 1% 4%;
@@ -214,8 +214,8 @@ body{
 }
 .trabalhos li{
     color: white;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
     font-weight: 200;
     padding: 10px;
     text-shadow: 0 0 4px #000;
@@ -228,8 +228,8 @@ body{
     display: flex;
     justify-content:center;
     color: white;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
     font-weight: 200;
     padding: 10px;
     text-shadow: 0 0 4px #000;
